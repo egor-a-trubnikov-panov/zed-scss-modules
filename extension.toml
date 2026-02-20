@@ -1,0 +1,18 @@
+id            = "scss-modules"
+name          = "SCSS Modules"
+version       = "0.1.0"
+schema_version = 1
+description   = "Navigate to *.module.scss class definitions from JavaScript and TypeScript."
+
+[language_servers.scss-modules-ls]
+name      = "SCSS Modules LS"
+languages = ["JavaScript", "JSX", "TypeScript", "TSX"]
+
+  [language_servers.scss-modules-ls.language_ids]
+  JavaScript = "javascript"
+  JSX        = "javascriptreact"
+  TypeScript = "typescript"
+  TSX        = "typescriptreact"
+
+[wasm]
+path = "target/wasm32-wasip2/release/scss_modules.wasm"

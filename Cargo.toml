@@ -1,0 +1,17 @@
+[package]
+name    = "scss-modules"
+version = "0.1.0"
+edition = "2021"          # API требует ≥2021 :contentReference[oaicite:3]{index=3}
+license = "MIT"
+authors = ["Egor Trubnikov-Panov (https://github.com/egor-a-trubnikov-panov)"]
+homepage = "https://github.com/egor-a-trubnikov-panov"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = { path = "vendor/zed_extension_api" }
+
+# --- лечим проблему edition 2024 ---
+# [patch.crates-io]
+# spdx = "=0.10.8"          # последняя с edition 2021
