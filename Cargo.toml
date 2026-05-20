@@ -1,17 +1,15 @@
 [package]
 name    = "scss-modules"
 version = "0.1.0"
-edition = "2021"          # API требует ≥2021 :contentReference[oaicite:3]{index=3}
+edition = "2021"
 license = "MIT"
 authors = ["Egor Trubnikov-Panov (https://github.com/egor-a-trubnikov-panov)"]
-homepage = "https://github.com/egor-a-trubnikov-panov"
+description = "Zed extension for navigating to SCSS module class definitions."
+repository = "https://github.com/egor-a-trubnikov-panov/zed-scss-modules"
+homepage = "https://github.com/egor-a-trubnikov-panov/zed-scss-modules"
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-zed_extension_api = { path = "vendor/zed_extension_api" }
-
-# --- лечим проблему edition 2024 ---
-# [patch.crates-io]
-# spdx = "=0.10.8"          # последняя с edition 2021
+zed_extension_api = "0.6.0"

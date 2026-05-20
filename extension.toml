@@ -2,7 +2,9 @@ id            = "scss-modules"
 name          = "SCSS Modules"
 version       = "0.1.0"
 schema_version = 1
+authors       = ["Egor Trubnikov-Panov (https://github.com/egor-a-trubnikov-panov)"]
 description   = "Navigate to *.module.scss class definitions from JavaScript and TypeScript."
+repository    = "https://github.com/egor-a-trubnikov-panov/zed-scss-modules"
 
 [language_servers.scss-modules-ls]
 name      = "SCSS Modules LS"
